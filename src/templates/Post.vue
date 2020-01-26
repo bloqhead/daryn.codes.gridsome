@@ -1,0 +1,50 @@
+<template>
+  <div class="page-content">
+    <div class="breadcrumb">
+      <p>
+        <g-link to="/journal/" class="breadcrumb__link">&larr; Back</g-link>
+      </p>
+    </div>
+
+    <article class="journal-entry">
+      <header class="journal-entry__header">
+        <div class="journal-entry__title">
+          <h1>{{ $page.post.title }}</h1>
+        </div>
+        <div class="journal-entry__postdate">
+          <format-date :date="$page.post.date" />
+        </div>
+      </header>
+
+      <p class="journal-entry__reading-time">
+        {{ $page.post.timeToRead }} minute read
+      </p>
+
+      <div class="journal-entry__body" v-html="$page.post.content" />
+    </article>
+  </div>
+</template>
+
+<page-query>
+query Post ($path: String!) {
+   post: post (path: $path) {
+    id
+    title
+    content
+    date (format: "D MMMM YYYY")
+    timeToRead
+  }
+}
+</page-query>
+
+<script>
+import FormatDate from "@/components/FormatDate";
+
+export default {
+  components: {
+    FormatDate
+  }
+};
+</script>
+
+<style></style>
