@@ -56,6 +56,7 @@ query {
         url
         image
         content
+        slug
       }
     }
   }

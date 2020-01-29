@@ -1,8 +1,7 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+// Default Layout
 import DefaultLayout from "~/layouts/Default.vue";
 
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 
@@ -47,8 +46,8 @@ library.add(
   faClock
 );
 
+// Styles
 import "./assets/scss/vendor/prism-synthwave84.css";
-
 import "~/assets/scss/styles.scss";
 
 export default function(Vue, { router, head, isClient }) {
@@ -58,6 +57,12 @@ export default function(Vue, { router, head, isClient }) {
   head.link.push({
     rel: "stylesheet",
     href:
-      "//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700&font-display=swap"
+      "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700&font-display=swap"
+  });
+
+  // Global Meta
+  head.meta.push({
+    name: "keywords",
+    content: "Web, Web Design, JavaScript, HTML5, CSS, Sass, Vue.js"
   });
 }

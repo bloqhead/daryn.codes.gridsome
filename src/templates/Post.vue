@@ -16,9 +16,7 @@
         </div>
       </header>
 
-      <p class="journal-entry__reading-time">
-        {{ $page.post.timeToRead }} minute read
-      </p>
+      <p class="journal-entry__reading-time">{{ $page.post.timeToRead }} minute read</p>
 
       <div class="journal-entry__body" v-html="$page.post.content" />
     </article>
@@ -31,7 +29,7 @@ query Post ($path: String!) {
     id
     title
     content
-    date (format: "D MMMM YYYY")
+    date
     timeToRead
   }
 }
@@ -41,6 +39,29 @@ query Post ($path: String!) {
 import FormatDate from "@/components/FormatDate";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: "author",
+          content: "Daryn St. Pierre"
+        },
+        {
+          description: this.metaDesc
+        }
+      ]
+    };
+  },
+  computed: {
+    metaDesc() {
+      const content = this.$page.post.content;
+      return (content.length > 5
+        ? `${content.substring(0, 160)}...`
+        : content
+      ).replace(/(<([^>]+)>)/gi, "");
+    }
+  },
   components: {
     FormatDate
   }

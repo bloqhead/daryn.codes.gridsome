@@ -4,15 +4,47 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const siteName = "Daryn St. Pierre, Front-End Web Developer";
+
 module.exports = {
-  siteName: "Daryn St. Pierre - Front-End Web Developer",
+  siteUrl: "https://daryn.codes",
+  siteName: siteName,
   siteDescription:
     "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.",
+  titleTemplate: `%s | ${siteName}`,
   plugins: [
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
         id: "UA-2478113-11"
+      }
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000,
+        config: {
+          "/": {
+            changefreq: "monthly",
+            priority: 0.5
+          },
+          "/work": {
+            changefreq: "monthly",
+            priority: 0.7
+          },
+          "/journal/*": {
+            changefreq: "weekly",
+            priority: 0.5
+          },
+          "/contact": {
+            changefreq: "monthly",
+            priority: 0.5
+          },
+          "/uses": {
+            changefreq: "weekly",
+            priority: 0.5
+          }
+        }
       }
     },
     {
@@ -30,7 +62,7 @@ module.exports = {
         themeColor: "#f54768",
         backgroundColor: "#000000",
         icon: "./src/icon.png",
-        msTileImage: "",
+        msTileImage: "./src/icon.png",
         msTileColor: "#f54768"
       }
     },
