@@ -16,7 +16,9 @@
         </div>
       </header>
 
-      <p class="journal-entry__reading-time">{{ $page.post.timeToRead }} minute read</p>
+      <p class="journal-entry__reading-time">
+        {{ $page.post.timeToRead }} minute read
+      </p>
 
       <div class="journal-entry__body" v-html="$page.post.content" />
     </article>
@@ -44,11 +46,32 @@ export default {
       title: this.$page.post.title,
       meta: [
         {
+          name: "description",
+          content: this.metaDesc
+        },
+        {
           name: "author",
           content: "Daryn St. Pierre"
         },
         {
-          description: this.metaDesc
+          key: "og:title",
+          name: "og:title",
+          content: this.$page.post.title
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$page.post.title
+        },
+        {
+          key: "og:description",
+          name: "og:description",
+          content: this.metaDesc
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.metaDesc
         }
       ]
     };

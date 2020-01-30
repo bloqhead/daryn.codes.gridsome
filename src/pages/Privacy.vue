@@ -49,14 +49,26 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: "Privacy Policy",
-    meta: [
-      {
-        name: "description",
-        content: "The privacy policy for daryn.codes."
-      }
-    ]
+  metaInfo() {
+    return {
+      title: "Privacy Policy",
+      meta: [
+        {
+          name: "description",
+          content: "The Privacy Policy for daryn.codes."
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Privacy Policy"
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Privacy Policy"
+        }
+      ]
+    };
   }
 };
 </script>

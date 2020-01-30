@@ -39,13 +39,27 @@ import FormatDate from "@/components/FormatDate";
 import PostList from "@/components/PostList";
 
 export default {
-  name: "Journal",
   metaInfo: {
     title: "Journal",
     meta: [
       {
+        name: "description",
+        content:
+          "Topics that span the gamut of web development, UX, Vue.js, and other similar topics."
+      },
+      {
         name: "author",
         content: "Daryn St. Pierre"
+      },
+      {
+        key: "og:title",
+        name: "og:title",
+        content: "The web journal of Daryn St. Pierre."
+      },
+      {
+        key: "twitter:title",
+        name: "twitter:title",
+        content: "The web journal of Daryn St. Pierre."
       }
     ]
   },

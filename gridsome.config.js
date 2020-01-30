@@ -15,9 +15,6 @@ module.exports = {
   titleTemplate: `%s | ${siteName}`,
   plugins: [
     {
-      use: "gridsome-plugin-ogp"
-    },
-    {
       use: "@gridsome/plugin-google-analytics",
       options: {
         id: "UA-2478113-11"

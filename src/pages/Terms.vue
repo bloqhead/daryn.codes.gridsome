@@ -109,14 +109,26 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: "Terms of Service",
-    meta: [
-      {
-        name: "description",
-        content: "The terms of service for daryn.codes."
-      }
-    ]
+  metaInfo() {
+    return {
+      title: "Terms Of Service",
+      meta: [
+        {
+          name: "description",
+          content: "The Terms of Service for daryn.codes."
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Terms of Service"
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Terms of Service"
+        }
+      ]
+    };
   }
 };
 </script>

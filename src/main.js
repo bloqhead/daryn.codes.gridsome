@@ -47,7 +47,7 @@ library.add(
 );
 
 // Styles
-import "./assets/scss/vendor/prism-synthwave84.css";
+import "~/assets/scss/vendor/prism-synthwave84.css";
 import "~/assets/scss/styles.scss";
 
 export default function(Vue, { router, head, isClient }) {
@@ -64,5 +64,30 @@ export default function(Vue, { router, head, isClient }) {
   head.meta.push({
     name: "keywords",
     content: "Web, Web Design, JavaScript, HTML5, CSS, Sass, Vue.js"
+  });
+
+  // OpenGraph tags
+  head.meta.push({
+    key: "og:description",
+    name: "og:description",
+    content:
+      "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+  });
+
+  head.meta.push({
+    key: "twitter:description",
+    name: "twitter:description",
+    content:
+      "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+  });
+
+  router.beforeEach((to, from, next) => {
+    head.meta.push({
+      key: "og:url",
+      name: "og:url",
+      content: process.env.GRIDSOME_SITE_URL + to.path
+    });
+
+    next();
   });
 }

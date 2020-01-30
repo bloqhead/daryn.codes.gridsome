@@ -83,17 +83,37 @@
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteName
+    siteDescription
+  }
+}
+</static-query>
+
 <script>
 export default {
-  metaInfo: {
-    title: "Home",
-    meta: [
-      {
-        name: "description",
-        content:
-          "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
-      }
-    ]
+  metaInfo() {
+    return {
+      title: this.$static.metadata.siteName,
+      meta: [
+        {
+          name: "description",
+          content: this.$static.metadata.siteDescription
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: this.$static.metadata.siteName
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$static.metadata.siteName
+        }
+      ]
+    };
   }
 };
 </script>

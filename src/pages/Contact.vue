@@ -15,14 +15,26 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: "Hello",
-    meta: [
-      {
-        name: "description",
-        content: "Drop me a line."
-      }
-    ]
+  metaInfo() {
+    return {
+      title: "Hello",
+      meta: [
+        {
+          name: "description",
+          content: "This is my contact info. Drop me a line."
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Say Hello"
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Say Hello"
+        }
+      ]
+    };
   }
 };
 </script>

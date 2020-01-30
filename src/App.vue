@@ -35,16 +35,6 @@ export default {
   components: {
     GlobalHeader,
     GlobalFooter
-  },
-  metaInfo() {
-    return {
-      ...this.$ogp({
-        title: this.$static.metadata.siteName,
-        description: this.$static.metadata.siteDescription,
-        image: `${this.$static.metadata.siteUrl}/og@2x.png`,
-        appId: process.env.GRIDSOME_FB_ID
-      })
-    };
   }
 };
 </script>

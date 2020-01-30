@@ -14,14 +14,26 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: "Page Not Found!",
-    meta: [
-      {
-        name: "description",
-        content: "The page you were looking for could not be found."
-      }
-    ]
+  metaInfo() {
+    return {
+      title: "Page Not Found!",
+      meta: [
+        {
+          name: "description",
+          content: "The page you were looking for could not be found."
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Page Not Found!"
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Page Not Found!"
+        }
+      ]
+    };
   }
 };
 </script>
