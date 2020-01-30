@@ -25,7 +25,7 @@ export default {
         },
         {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: "Say Hello"
         },
         {

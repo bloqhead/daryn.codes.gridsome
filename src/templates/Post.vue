@@ -54,8 +54,13 @@ export default {
           content: "Daryn St. Pierre"
         },
         {
+          key: "og:type",
+          property: "og:type",
+          content: "article"
+        },
+        {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: this.$page.post.title
         },
         {
@@ -65,7 +70,7 @@ export default {
         },
         {
           key: "og:description",
-          name: "og:description",
+          property: "og:description",
           content: this.metaDesc
         },
         {

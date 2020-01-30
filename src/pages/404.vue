@@ -24,7 +24,7 @@ export default {
         },
         {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: "Page Not Found!"
         },
         {

@@ -17,16 +17,6 @@
   <!-- .page-wrapper -->
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteUrl
-    siteName
-    siteDescription
-  }
-}
-</static-query>
-
 <script>
 import GlobalHeader from "./components/Header.vue";
 import GlobalFooter from "./components/Footer";

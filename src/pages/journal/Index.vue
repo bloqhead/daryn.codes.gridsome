@@ -53,7 +53,7 @@ export default {
       },
       {
         key: "og:title",
-        name: "og:title",
+        property: "og:title",
         content: "The web journal of Daryn St. Pierre."
       },
       {

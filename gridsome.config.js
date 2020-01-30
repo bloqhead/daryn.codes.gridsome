@@ -57,7 +57,7 @@ module.exports = {
         statusBarStyle: "default",
         manifestPath: "manifest.json",
         disableServiceWorker: true,
-        serviceWorkerPath: "service-worker.js",
+        // serviceWorkerPath: "service-worker.js",
         cachedFileTypes: "js,json,css,html,png,jpg,jpeg,svg",
         shortName: "daryn.codes",
         themeColor: "#f54768",

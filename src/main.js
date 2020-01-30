@@ -68,10 +68,58 @@ export default function(Vue, { router, head, isClient }) {
 
   // OpenGraph tags
   head.meta.push({
+    key: "fb:app_id",
+    property: "fb:app_id",
+    content: "121082755871108"
+  });
+
+  head.meta.push({
     key: "og:description",
-    name: "og:description",
+    property: "og:description",
     content:
       "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+  });
+
+  head.meta.push({
+    key: "og:url",
+    property: "og:url",
+    content: "https://daryn.codes"
+  });
+
+  head.meta.push({
+    key: "og:type",
+    property: "og:type",
+    content: "website"
+  });
+
+  head.meta.push({
+    key: "og:image",
+    property: "og:image",
+    content: "https://daryn.codes/og@2x.png"
+  });
+
+  head.meta.push({
+    key: "twitter:creator",
+    name: "twitter:creator",
+    content: "@bloqhead"
+  });
+
+  head.meta.push({
+    key: "twitter:site",
+    name: "twitter:site",
+    content: "@bloqhead"
+  });
+
+  head.meta.push({
+    key: "twitter:card",
+    name: "twitter:card",
+    content: "summary_large_image"
+  });
+
+  head.meta.push({
+    key: "twitter:image",
+    name: "twitter:image",
+    content: "https://daryn.codes/og@2x.png"
   });
 
   head.meta.push({
@@ -82,11 +130,13 @@ export default function(Vue, { router, head, isClient }) {
   });
 
   router.beforeEach((to, from, next) => {
-    head.meta.push({
-      key: "og:url",
-      name: "og:url",
-      content: process.env.GRIDSOME_SITE_URL + to.path
-    });
+    if (to.path !== "/") {
+      head.meta.push({
+        key: "og:url",
+        property: "og:url",
+        content: "https://daryn.codes" + to.path
+      });
+    }
 
     next();
   });

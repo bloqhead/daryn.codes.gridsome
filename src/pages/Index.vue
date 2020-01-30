@@ -104,14 +104,15 @@ export default {
         },
         {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: this.$static.metadata.siteName
         },
         {
           key: "twitter:title",
           name: "twitter:title",
           content: this.$static.metadata.siteName
-        }
+        },
+        {}
       ]
     };
   }

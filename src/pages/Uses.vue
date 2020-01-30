@@ -84,7 +84,7 @@ export default {
         },
         {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: "The tools of my trade."
         },
         {
