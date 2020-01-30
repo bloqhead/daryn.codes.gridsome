@@ -22,14 +22,18 @@
 }
 
 .page-footer__content {
+}
 
+.page-footer__copyright {
+  margin-top: 2em;
 }
 
 .page-footer__social {
   @include list-reset;
   text-transform: uppercase;
 
-  li, a {
+  li,
+  a {
     display: block;
   }
 
@@ -39,7 +43,6 @@
     padding: 0.5em 0;
 
     &:hover {
-
       svg path {
         fill: white;
       }
@@ -55,5 +58,9 @@
 @media #{$bp-medium} {
   .page-footer {
     text-align: left;
+  }
+
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }

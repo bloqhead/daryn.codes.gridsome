@@ -35,7 +35,11 @@
           <a href="https://gridsome.org/">Gridsome</a>. Hosted by
           <a href="https://zeit.co/">Zeit</a>.
         </p>
-        <p><g-link to="/uses/">What I use</g-link>.</p>
+        <p>
+          <g-link to="/uses/">What I use</g-link>.
+          <g-link to="/privacy/">Privacy</g-link>.
+          <g-link to="/terms/">Terms</g-link>.
+        </p>
       </div>
     </div>
   </footer>
