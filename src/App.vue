@@ -42,7 +42,7 @@ export default {
         title: this.$static.metadata.siteName,
         description: this.$static.metadata.siteDescription,
         image: `${this.$static.metadata.siteUrl}/og@2x.png`,
-        appId: process.env.VUE_APP_FB_ID
+        appId: process.env.GRIDSOME_FB_ID
       })
     };
   }
