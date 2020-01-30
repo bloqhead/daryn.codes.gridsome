@@ -17,6 +17,7 @@
     "@gridsome/transformer-remark": "^0.4.0",
     "animejs": "^3.1.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-ogp": "^0.0.7",
     "gridsome-plugin-pwa": "^0.0.12",
     "node-sass": "^4.13.1",
     "nuxt-fontawesome": "^0.4.0",

@@ -5,14 +5,18 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const siteName = "Daryn St. Pierre, Front-End Web Developer";
+const siteDesc =
+  "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.";
 
 module.exports = {
   siteUrl: "https://daryn.codes",
   siteName: siteName,
-  siteDescription:
-    "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.",
+  siteDescription: siteDesc,
   titleTemplate: `%s | ${siteName}`,
   plugins: [
+    {
+      use: "gridsome-plugin-ogp"
+    },
     {
       use: "@gridsome/plugin-google-analytics",
       options: {

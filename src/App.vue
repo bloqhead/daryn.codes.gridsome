@@ -34,6 +34,16 @@ export default {
   components: {
     GlobalHeader,
     GlobalFooter
+  },
+  metaInfo() {
+    return {
+      ...this.$ogp({
+        title: this.$static.metadata.siteName,
+        description: this.$static.metadata.siteDescription,
+        image: "/og@2x.png",
+        appId: process.env.VUE_APP_FB_ID
+      })
+    };
   }
 };
 </script>
