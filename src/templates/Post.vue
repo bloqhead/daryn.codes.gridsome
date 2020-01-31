@@ -65,7 +65,7 @@ export default {
         {
           key: "og:url",
           property: "og:url",
-          content: this.$static.metadata.siteUrl + this.$page.post.slug
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:type",
