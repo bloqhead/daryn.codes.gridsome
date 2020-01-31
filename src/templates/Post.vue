@@ -25,15 +25,24 @@
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
 <page-query>
 query Post ($path: String!) {
-   post: post (path: $path) {
-    id
-    title
-    content
-    date
-    timeToRead
-  }
+    post: post (path: $path) {
+      slug
+      id
+      title
+      content
+      date
+      timeToRead
+    }
 }
 </page-query>
 
@@ -52,6 +61,11 @@ export default {
         {
           name: "author",
           content: "Daryn St. Pierre"
+        },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: this.$static.metadata.siteUrl + this.$page.post.slug
         },
         {
           key: "og:type",

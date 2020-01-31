@@ -53,6 +53,14 @@
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
 <page-query>
 query {
   allWork {
@@ -81,6 +89,11 @@ export default {
           name: "description",
           content:
             "A selection of Vue.js, WordPress, and UI/UX projects from my portfolio."
+        },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:title",

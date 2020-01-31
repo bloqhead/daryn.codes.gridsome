@@ -86,6 +86,7 @@
 <static-query>
 query {
   metadata {
+    siteUrl
     siteName
     siteDescription
   }
@@ -101,6 +102,11 @@ export default {
         {
           name: "description",
           content: this.$static.metadata.siteDescription
+        },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:title",

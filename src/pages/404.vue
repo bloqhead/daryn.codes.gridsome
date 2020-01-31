@@ -12,6 +12,14 @@
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
 <script>
 export default {
   metaInfo() {
@@ -21,6 +29,11 @@ export default {
         {
           name: "description",
           content: "The page you were looking for could not be found."
+        },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:title",

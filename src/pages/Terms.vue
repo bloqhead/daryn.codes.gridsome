@@ -107,6 +107,14 @@
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
 <script>
 export default {
   metaInfo() {
@@ -116,6 +124,11 @@ export default {
         {
           name: "description",
           content: "The Terms of Service for daryn.codes."
+        },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:title",

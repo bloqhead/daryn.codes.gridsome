@@ -71,6 +71,14 @@
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
 <script>
 export default {
   metaInfo() {
@@ -81,6 +89,11 @@ export default {
           name: "description",
           content:
             "These are the everyday items I use to build web applications and get work done."
+        },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:title",

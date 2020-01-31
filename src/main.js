@@ -81,12 +81,6 @@ export default function(Vue, { router, head, isClient }) {
   });
 
   head.meta.push({
-    key: "og:url",
-    property: "og:url",
-    content: "https://daryn.codes"
-  });
-
-  head.meta.push({
     key: "og:type",
     property: "og:type",
     content: "website"
@@ -129,15 +123,20 @@ export default function(Vue, { router, head, isClient }) {
       "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
   });
 
-  router.beforeEach((to, from, next) => {
-    if (to.path !== "/") {
-      head.meta.push({
-        key: "og:url",
-        property: "og:url",
-        content: "https://daryn.codes" + to.path
-      });
-    }
+  /**
+   * This doesn't actually work. For now, `og:url` is handled
+   * in each individual page and component. A bit annoying.
+   */
 
-    next();
-  });
+  // router.beforeEach((to, from, next) => {
+  //   head.meta.push({
+  //     key: "og:url",
+  //     property: "og:url",
+  //     content: "https://daryn.codes" + to.path
+  //   });
+
+  //   console.log(head.meta);
+
+  //   next();
+  // });
 }
