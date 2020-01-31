@@ -68,12 +68,12 @@ export default {
         {
           key: "og:title",
           property: "og:title",
-          content: "The web journal of Daryn St. Pierre."
+          content: "Journal"
         },
         {
           key: "twitter:title",
           name: "twitter:title",
-          content: "The web journal of Daryn St. Pierre."
+          content: "Journal"
         }
       ]
     };

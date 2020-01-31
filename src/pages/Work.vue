@@ -14,12 +14,7 @@
         :key="edge.node.id"
         class="project-list__item"
       >
-        <a
-          itemprop="url"
-          rel="noindex nofollow"
-          :href="edge.node.url"
-          class="project-list__link"
-        >
+        <a itemprop="url" rel="noindex nofollow" :href="edge.node.url" class="project-list__link">
           <g-image
             :src="edge.node.image"
             :alt="`A screenshot of the ${edge.node.title} project`"
@@ -27,10 +22,7 @@
           />
           <!-- .project-list__item-image -->
           <div class="project-list__item-content">
-            <h3
-              itemprop="headline"
-              class="project-list__item-title angle-forward"
-            >
+            <h3 itemprop="headline" class="project-list__item-title angle-forward">
               <div class="angle-reverse" v-html="edge.node.title" />
             </h3>
             <div class="project-list__item-faux-link angle-reverse">
@@ -98,12 +90,12 @@ export default {
         {
           key: "og:title",
           property: "og:title",
-          content: "Samples of my work."
+          content: "Work"
         },
         {
           key: "twitter:title",
           name: "twitter:title",
-          content: "Samples of my work."
+          content: "Work"
         }
       ]
     };
