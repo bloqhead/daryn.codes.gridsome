@@ -72,7 +72,7 @@
       <li>PHP / Twig / Smarty (is that still around?)</li>
       <li>
         <a href="https://vuejs.org/">VueJS</a> (this site runs on Vue +
-        <a href="https://nuxtjs.org/">NuxtJS</a>)
+        <a href="https://gridsome.org/">Gridsome</a>)
       </li>
       <li>
         A tiny bit of
