@@ -17,6 +17,7 @@
     <g-image
       fit="contain"
       width="626"
+      quality="90"
       src="~/assets/images/neofetch@2x.png"
       alt="neofetch screenshot from my personal MacBook Pro"
       class="neofetch-image"
