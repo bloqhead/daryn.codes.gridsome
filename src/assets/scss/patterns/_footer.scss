@@ -6,7 +6,7 @@
   background-color: rgba($mid, 0.85);
   font-family: $overpass-mono;
   font-size: 0.8em;
-  text-align: center;
+  // text-align: center;
   color: $shade;
   padding: $global-component-padding * 2;
   margin: 0;
@@ -52,6 +52,19 @@
   span {
     margin-left: 0.5em;
     letter-spacing: $char-spacing;
+  }
+}
+
+.page-footer__links {
+  display: flex;
+  margin: 1rem -1rem;
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a {
+    display: block;
   }
 }
 
