@@ -16,6 +16,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "animejs": "^3.1.0",
+    "dayjs": "^1.8.26",
     "gridsome": "^0.7.0",
     "gridsome-plugin-ogp": "^0.0.7",
     "gridsome-plugin-pwa": "^0.0.12",
