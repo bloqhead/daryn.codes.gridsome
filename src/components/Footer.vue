@@ -32,14 +32,17 @@
         <p>&copy; {{ new Date().getFullYear() }} Daryn St. Pierre</p>
         <p>
           Built with
-          <a href="https://gridsome.org/">Gridsome</a>. Hosted by
-          <a href="https://zeit.co/">Zeit</a>.
+          <a href="https://gridsome.org/">Gridsome</a>
         </p>
         <p>
-          <g-link to="/uses/">What I use</g-link>.
-          <g-link to="/privacy/">Privacy</g-link>.
-          <g-link to="/terms/">Terms</g-link>.
+          Hosted by
+          <a href="https://vercel.com/">Vercel</a>
         </p>
+        <ul class="page-footer__links">
+          <li><g-link to="/uses/">Uses</g-link></li>
+          <li><g-link to="/privacy/">Privacy</g-link></li>
+          <li><g-link to="/terms/">Terms</g-link></li>
+        </ul>
       </div>
     </div>
   </footer>
