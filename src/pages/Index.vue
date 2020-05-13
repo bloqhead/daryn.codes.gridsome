@@ -16,22 +16,25 @@
       </div>
       <p>
         My name is
-        <span itemprop="givenName">Daryn</span> and I build
-        <g-link to="/work/">websites</g-link>&nbsp;in sunny St. Petersburg
-        Florida. I like to experiment on
-        <a href="https://codepen.io/bloqhead">Codepen</a> and have been featured
-        on the front page multiple times, as well as in
-        <a href="https://codepen.io/spark/">Codepen Spark</a>.
+        <span itemprop="givenName">Daryn</span>
+        and I build
+        <g-link to="/work/">websites</g-link>
+        &nbsp;in sunny St. Petersburg Florida. I like to experiment on
+        <a href="https://codepen.io/bloqhead">Codepen</a>
+        and have been featured on the front page multiple times, as well as in
+        <a href="https://codepen.io/spark/">Codepen Spark</a>
+        .
       </p>
     </div>
 
     <div class="intro">
       <p>
         Design, code,
-        <abbr title="User Experience">UX</abbr>/
-        <abbr title="User Interface">UI</abbr>, accessibility, client relations;
-        I do it all. I've been in the game since circa 2001 and refuse to stop
-        learning.
+        <abbr title="User Experience">UX</abbr>
+        /
+        <abbr title="User Interface">UI</abbr>
+        , accessibility, client relations; I do it all. I've been in the game
+        since circa 2001 and refuse to stop learning.
       </p>
     </div>
 
@@ -42,7 +45,8 @@
       computer-savvy father. Before I was born, he was a contractor for NASA and
       worked on computer systems that were used in space capsules. With his
       guidance, I was eventually navigating
-      <abbr title="Microsoft Disk Operating System">MS-DOS</abbr> like a pro.
+      <abbr title="Microsoft Disk Operating System">MS-DOS</abbr>
+      like a pro.
     </p>
 
     <!-- <p>This upbringing, coupled with my artistic roots (and a couple failed art school attempts), eventually evolved into a graphic design career that gifted me with many interesting experiences and problems to solve.</p>
@@ -65,20 +69,23 @@
     <ul class="list list--cols">
       <li>WordPress</li>
       <li>
-        <a href="https://sass-lang.com/">Sass</a>
+        <a href="https://sass-lang.com/">SCSS</a>
       </li>
       <li>JavaScript / ES6</li>
       <li>HTML5</li>
-      <li>PHP / Twig / Smarty (is that still around?)</li>
+      <li>PHP / Twig</li>
       <li>
-        <a href="https://vuejs.org/">VueJS</a> (this site runs on Vue +
-        <a href="https://gridsome.org/">Gridsome</a>)
+        <a href="https://vuejs.org/">VueJS</a>
       </li>
       <li>
-        A tiny bit of
-        <a href="https://reactjs.org/">React</a>
+        <a href="https://gridsome.org/">Gridsome</a>
       </li>
-      <li>Some Python</li>
+      <li>
+        <a href="https://animejs.com/">AnimeJS</a>
+      </li>
+      <li>
+        <a href="https://greensock.com/">Greensock</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -101,26 +108,26 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$static.metadata.siteDescription
+          content: this.$static.metadata.siteDescription,
         },
         {
           key: "og:url",
           property: "og:url",
-          content: this.$static.metadata.siteUrl + this.$route.path
+          content: this.$static.metadata.siteUrl + this.$route.path,
         },
         {
           key: "og:title",
           property: "og:title",
-          content: this.$static.metadata.siteName
+          content: this.$static.metadata.siteName,
         },
         {
           key: "twitter:title",
           name: "twitter:title",
-          content: this.$static.metadata.siteName
+          content: this.$static.metadata.siteName,
         },
-        {}
-      ]
+        {},
+      ],
     };
-  }
+  },
 };
 </script>
