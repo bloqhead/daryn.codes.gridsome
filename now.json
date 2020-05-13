@@ -8,7 +8,7 @@
   ],
   "build": {
     "env": {
-      "NPM_TOKEN": "@fontawesome_token"
+      "FONTAWESOME_TOKEN": "@fontawesome_token"
     }
   }
 }
