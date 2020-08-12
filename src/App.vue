@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper" :data-floating-label="`Daryn St. Pierre // ${randTitle}`">
+  <div class="page-wrapper" :data-floating-label="randTitle">
     <global-header />
 
     <div class="content" role="main">
@@ -21,7 +21,7 @@ import GlobalFooter from "./components/Footer";
 export default {
   data () {
     return {
-      randTitle: null,
+      randTitle: '',
       titles: [
         'Front End Web Developer',
         'JAMStack\'r',
@@ -62,8 +62,9 @@ export default {
   methods: {
     randFact () {
       const items = this.titles
+      const rand = items[Math.floor(Math.random() * items.length)]
 
-      this.randTitle = items[Math.floor(Math.random() * items.length)]
+      this.randTitle = `Daryn St. Pierre // ${rand}`
     }
   }
 };
