@@ -10,6 +10,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/remark-prismjs": "^0.3.0",
@@ -21,7 +22,9 @@
     "gridsome-plugin-ogp": "^0.0.7",
     "gridsome-plugin-pwa": "^0.0.12",
     "node-sass": "^4.13.1",
-    "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }

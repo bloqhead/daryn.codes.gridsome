@@ -2,11 +2,7 @@
   <div class="page-content">
     <h1 class="brush title">Versatile</h1>
 
-    <div
-      itemscope
-      itemtype="https://schema.org/Person"
-      class="intro intro--has-image"
-    >
+    <div itemscope itemtype="https://schema.org/Person" class="intro intro--has-image">
       <div class="intro__image">
         <g-image
           itemprop="photo"
@@ -18,11 +14,14 @@
         My name is
         <span itemprop="givenName">Daryn</span>
         and I build
-        <g-link to="/work/">websites</g-link>
-        &nbsp;in sunny St. Petersburg Florida. I like to experiment on
-        <a href="https://codepen.io/bloqhead">Codepen</a>
+        <g-link to="/work/">websites</g-link>&nbsp;in sunny St. Petersburg Florida. I like to experiment on
+        <a
+          href="https://codepen.io/bloqhead"
+        >Codepen</a>
         and have been featured on the front page multiple times, as well as in
-        <a href="https://codepen.io/spark/">Codepen Spark</a>
+        <a
+          href="https://codepen.io/spark/"
+        >Codepen Spark</a>
         .
       </p>
     </div>
@@ -45,7 +44,9 @@
       computer-savvy father. Before I was born, he was a contractor for NASA and
       worked on computer systems that were used in space capsules. With his
       guidance, I was eventually navigating
-      <abbr title="Microsoft Disk Operating System">MS-DOS</abbr>
+      <abbr
+        title="Microsoft Disk Operating System"
+      >MS-DOS</abbr>
       like a pro.
     </p>
 
@@ -55,23 +56,14 @@
 
     <h3>I build things with&hellip;</h3>
 
-    <div
-      class="flex-well flex-well--auto flex-well--padded-items align--center mt--sm mb--sm"
-    >
-      <fa :icon="['fab', 'html5']" class="fa-7x color--html5" />
-      <fa :icon="['fab', 'wordpress-simple']" class="fa-7x color--wordpress" />
-      <fa :icon="['fab', 'sass']" class="fa-7x color--sass" />
-      <fa :icon="['fab', 'js']" class="fa-7x color--js" />
-      <fa :icon="['fab', 'php']" class="fa-7x color--php" />
-      <fa :icon="['fab', 'vuejs']" class="fa-7x color--vue" />
-    </div>
+    <brand-logos />
 
     <ul class="list list--cols">
       <li>WordPress</li>
       <li>
         <a href="https://sass-lang.com/">SCSS</a>
       </li>
-      <li>JavaScript / ES6</li>
+      <li>JavaScript / ES(X)</li>
       <li>HTML5</li>
       <li>PHP / Twig</li>
       <li>
@@ -101,6 +93,8 @@ query {
 </static-query>
 
 <script>
+import BrandLogos from "~/components/BrandLogos";
+
 export default {
   metaInfo() {
     return {
@@ -108,26 +102,29 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$static.metadata.siteDescription,
+          content: this.$static.metadata.siteDescription
         },
         {
           key: "og:url",
           property: "og:url",
-          content: this.$static.metadata.siteUrl + this.$route.path,
+          content: this.$static.metadata.siteUrl + this.$route.path
         },
         {
           key: "og:title",
           property: "og:title",
-          content: this.$static.metadata.siteName,
+          content: this.$static.metadata.siteName
         },
         {
           key: "twitter:title",
           name: "twitter:title",
-          content: this.$static.metadata.siteName,
+          content: this.$static.metadata.siteName
         },
-        {},
-      ],
+        {}
+      ]
     };
   },
+  components: {
+    BrandLogos
+  }
 };
 </script>

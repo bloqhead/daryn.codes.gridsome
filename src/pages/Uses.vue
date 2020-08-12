@@ -47,10 +47,8 @@
             >68-key Qisan Magicforce gaming keyboard</a>
             w/ MX Blue dampers
           </li>
-          <li>
-            iPhone Xs Max / Nexus 5
-            <em>(still going strong!)</em>
-          </li>
+          <li>Dell Ultrasharp U2718Q 27-Inch 4K IPS Monitor</li>
+          <li>iPhone Xs Max</li>
         </ul>
       </div>
       <div>
@@ -60,23 +58,16 @@
             <a href="https://code.visualstudio.com/" rel="noindex nofollow">VSCode</a>
           </li>
           <li>
-            <a href="https://www.sublimetext.com/3" rel="noindex nofollow">Sublime Text</a>
-          </li>
-          <li>
             <a href="https://iterm2.com/" rel="noindex nofollow">iTerm 2</a>
           </li>
           <li>
-            <a href="https://www.sketchapp.com/" rel="noindex nofollow">Sketch</a>
+            <a href="https://sketchapp.com/" rel="noindex nofollow">Sketch</a>
           </li>
           <li>
-            <a href="https://sequelpro.com/" rel="noindex nofollow">Sequel Pro</a>
+            <a href="https://figma.com/" rel="noindex nofollow">Figma</a>
           </li>
           <li>
-            <a href="https://www.panic.com/transmit/" rel="noindex nofollow">Transmit by Panic</a>
-          </li>
-          <li>
-            Deployed on
-            <a href="https://zeit.co/now" rel="noindex nofollow">Zeit Now</a>
+            <a href="https://vercel.com/" rel="noindex nofollow">Vercel</a>
           </li>
         </ul>
       </div>

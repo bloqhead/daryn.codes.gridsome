@@ -6,7 +6,9 @@
       <p>
         If you want to drop me a line to ask a question or just say hi, you can
         email me at
-        <a href="mailto:daryniscool@gmail.com">daryniscool@gmail.com</a>. I'll
+        <a
+          href="mailto:daryn@hey.com"
+        >daryn@hey.com</a>. I'll
         try to respond in a day or two.
       </p>
     </div>

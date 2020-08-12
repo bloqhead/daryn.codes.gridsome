@@ -6,7 +6,7 @@
       <p>Below, you'll find some select projects I've worked on.</p>
     </div>
 
-    <ul class="project-list">
+    <ul class="project-list md:grid md:grid-cols-2 col-gap-6">
       <li
         itemscope
         itemtype="http://schema.org/CreativeWork"
@@ -14,8 +14,14 @@
         :key="edge.node.id"
         class="project-list__item"
       >
-        <a itemprop="url" rel="noindex nofollow" :href="edge.node.url" class="project-list__link">
+        <a
+          itemprop="url"
+          rel="noindex nofollow"
+          :href="edge.node.url"
+          class="project-list__link browser-chrome"
+        >
           <g-image
+            v-if="edge.node.image"
             :src="edge.node.image"
             :alt="`A screenshot of the ${edge.node.title} project`"
             class="project-list__item-image"
@@ -27,7 +33,7 @@
             </h3>
             <div class="project-list__item-faux-link angle-reverse">
               <div class="angle-forward">
-                View Site
+                View
                 <fa :icon="['fa', 'arrow-right']" />
               </div>
             </div>
@@ -35,7 +41,7 @@
           <!-- .project-list__item-content -->
         </a>
         <div class="project-list__item-tasks">
-          <h4 itemprop="subheadline">Project Summary</h4>
+          <!-- <h4 itemprop="subheadline">Project Summary</h4> -->
           <p v-html="edge.node.content" />
         </div>
         <!-- .project-list__item-summary -->
@@ -55,7 +61,7 @@ query {
 
 <page-query>
 query {
-  allWork {
+  allWork(sortBy: "title", order: ASC) {
     totalCount
     edges {
       node {
@@ -65,6 +71,7 @@ query {
         image
         content
         slug
+        path
       }
     }
   }

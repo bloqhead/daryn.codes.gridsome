@@ -9,7 +9,8 @@ import {
   faEnvelope,
   faArrowRight,
   faCode,
-  faClock
+  faClock,
+  faTerminal
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -22,7 +23,8 @@ import {
   faPhp,
   faJs,
   faVuejs,
-  faWordpressSimple
+  faWordpressSimple,
+  faNode
 } from "@fortawesome/free-brands-svg-icons";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -40,10 +42,12 @@ library.add(
   faJs,
   faVuejs,
   faWordpressSimple,
+  faNode,
   faEnvelope,
   faArrowRight,
   faCode,
-  faClock
+  faClock,
+  faTerminal
 );
 
 // Styles
@@ -61,82 +65,48 @@ export default function(Vue, { router, head, isClient }) {
   });
 
   // Global Meta
-  head.meta.push({
-    name: "keywords",
-    content: "Web, Web Design, JavaScript, HTML5, CSS, Sass, Vue.js"
-  });
-
-  // OpenGraph tags
-  head.meta.push({
-    key: "fb:app_id",
-    property: "fb:app_id",
-    content: "121082755871108"
-  });
-
-  head.meta.push({
-    key: "og:description",
-    property: "og:description",
-    content:
-      "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
-  });
-
-  head.meta.push({
-    key: "og:type",
-    property: "og:type",
-    content: "website"
-  });
-
-  head.meta.push({
-    key: "og:image",
-    property: "og:image",
-    content: "https://daryn.codes/og@2x.png"
-  });
-
-  head.meta.push({
-    key: "twitter:creator",
-    name: "twitter:creator",
-    content: "@bloqhead"
-  });
-
-  head.meta.push({
-    key: "twitter:site",
-    name: "twitter:site",
-    content: "@bloqhead"
-  });
-
-  head.meta.push({
-    key: "twitter:card",
-    name: "twitter:card",
-    content: "summary_large_image"
-  });
-
-  head.meta.push({
-    key: "twitter:image",
-    name: "twitter:image",
-    content: "https://daryn.codes/og@2x.png"
-  });
-
-  head.meta.push({
-    key: "twitter:description",
-    name: "twitter:description",
-    content:
-      "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
-  });
-
-  /**
-   * This doesn't actually work. For now, `og:url` is handled
-   * in each individual page and component. A bit annoying.
-   */
-
-  // router.beforeEach((to, from, next) => {
-  //   head.meta.push({
-  //     key: "og:url",
-  //     property: "og:url",
-  //     content: "https://daryn.codes" + to.path
-  //   });
-
-  //   console.log(head.meta);
-
-  //   next();
-  // });
+  head.meta.push(
+    {
+      name: "keywords",
+      content: "Web, Web Design, Web Development, Fullstack, JAMStack, JavaScript, HTML5, CSS, Sass, Vue, Vue.js, PHP, WordPress, Engineer"
+    }, {
+      key: "fb:app_id",
+      property: "fb:app_id",
+      content: "121082755871108"
+    }, {
+      key: "og:description",
+      property: "og:description",
+      content:
+        "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+    }, {
+      key: "og:type",
+      property: "og:type",
+      content: "website"
+    }, {
+      key: "og:image",
+      property: "og:image",
+      content: "https://daryn.codes/og@2x.png"
+    }, {
+      key: "twitter:creator",
+      name: "twitter:creator",
+      content: "@bloqhead"
+    }, {
+      key: "twitter:site",
+      name: "twitter:site",
+      content: "@bloqhead"
+    }, {
+      key: "twitter:card",
+      name: "twitter:card",
+      content: "summary_large_image"
+    }, {
+      key: "twitter:image",
+      name: "twitter:image",
+      content: "https://daryn.codes/og@2x.png"
+    }, {
+      key: "twitter:description",
+      name: "twitter:description",
+      content:
+        "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+    }
+  );
 }
