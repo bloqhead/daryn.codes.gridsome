@@ -67,6 +67,7 @@ body {
       position: absolute;
       top: 25rem;
       left: 15rem;
+      z-index: -1;
       display: block;
       content: attr(data-floating-label);
       font-family: $overpass-mono;

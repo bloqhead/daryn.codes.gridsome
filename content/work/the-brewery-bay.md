@@ -1,6 +1,6 @@
 ---
 title: The Brewery Bay
-url: http://www.thebrewerybay.com/
+url: http://thebrewerybay.com/
 image: ../../static/work/the-brewery-bay.png
 slug: brewery-bay
 ---
