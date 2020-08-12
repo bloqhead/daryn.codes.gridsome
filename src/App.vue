@@ -51,7 +51,7 @@ export default {
     GlobalHeader,
     GlobalFooter
   },
-  beforeMount () {
+  mounted () {
     this.randFact()
   },
   watch: {
