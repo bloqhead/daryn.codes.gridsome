@@ -6,7 +6,7 @@
       <p>Below, you'll find some select projects I've worked on.</p>
     </div>
 
-    <ul class="project-list md:grid md:grid-cols-2 col-gap-6">
+    <ul class="project-list xl:grid xl:grid-cols-2 col-gap-6">
       <li
         itemscope
         itemtype="http://schema.org/CreativeWork"

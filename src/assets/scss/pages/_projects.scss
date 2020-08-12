@@ -28,7 +28,7 @@
   }
 }
 
-.project-list__link {
+a.project-list__link {
   position: relative;
   display: block;
   overflow: hidden;
@@ -96,7 +96,8 @@
 .project-list__item-image {
   display: block;
   margin: 0;
-  // filter: grayscale(100%);
+  width: 100%;
+  height: auto;
 }
 
 .project-list__item-tasks {
