@@ -8,3 +8,4 @@ dist
 .env.*
 .npmrc
 keybase.txt
+.well-known

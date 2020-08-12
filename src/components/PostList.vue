@@ -1,9 +1,7 @@
 <template>
   <div>
     <h3 class="journal-list__title">
-      <g-link :to="post.path">
-        {{ post.title }}
-      </g-link>
+      <g-link :to="post.path">{{ post.title }}</g-link>
     </h3>
     <div class="journal-entry__postdate">
       <format-date :date="post.date" />
@@ -22,5 +20,3 @@ export default {
   }
 };
 </script>
-
-<style></style>

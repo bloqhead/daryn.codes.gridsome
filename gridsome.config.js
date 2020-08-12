@@ -3,7 +3,6 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-
 const siteName = "Daryn St. Pierre, Front-End Web Developer";
 const siteDesc =
   "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.";
@@ -29,12 +28,12 @@ module.exports = {
             changefreq: "monthly",
             priority: 0.5
           },
-          "/work": {
+          "/work/*": {
             changefreq: "monthly",
             priority: 0.7
           },
           "/journal/*": {
-            changefreq: "weekly",
+            changefreq: "monthly",
             priority: 0.5
           },
           "/contact": {
@@ -82,6 +81,9 @@ module.exports = {
         typeName: "Work",
         route: "/work/:slug"
       }
+    },
+    {
+      use: "gridsome-plugin-tailwindcss"
     }
   ],
   transformers: {
