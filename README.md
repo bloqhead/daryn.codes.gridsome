@@ -20,7 +20,7 @@ I also love the vast array of plugins and starters available in Gridsome, and th
 
 - [VueJS](https://vuejs.org/)
 - [Gridsome](https://gridsome.org/)
-- [Zeit Now](https://zeit.co/now)
+- [Vercel](https://vercel.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Summer Hearts font](https://creativemarket.com/hustlesupplyco/634184-Greenstone-Script-%2850-off%29) by [Hustle Supply Co](https://creativemarket.com/hustlesupplyco)
 - Check the [package.json](package.json) for more
