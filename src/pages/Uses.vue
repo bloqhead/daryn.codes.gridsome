@@ -49,6 +49,8 @@
           </li>
           <li>Dell Ultrasharp U2718Q 27-Inch 4K IPS Monitor</li>
           <li>iPhone Xs Max</li>
+          <li>Audio-Technica ATR2100X-USB USB/XLR Microphone</li>
+          <li>Knox Gear Boom Arm and Shock Mount</li>
         </ul>
       </div>
       <div>
