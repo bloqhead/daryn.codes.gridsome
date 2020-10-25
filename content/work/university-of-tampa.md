@@ -1,7 +1,7 @@
 ---
 title: University of Tampa
 url: https://www.ut.edu/
-image: ../../static/work/university-of-tampa.png
+image: ../../static/images/work/university-of-tampa.png
 slug: university-of-tampa
 ---
 

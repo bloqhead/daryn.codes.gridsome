@@ -1,7 +1,7 @@
 ---
 title: Mote
 url: https://mote.org/
-image: ../../static/work/mote.png
+image: ../../static/images/work/mote.png
 slug: mote-marine
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Kuma
 url: https://kuma.io/
-image: ../../static/work/kuma-website.png
+image: ../../static/images/work/kuma-website.png
 slug: kuma-website
 ---
 

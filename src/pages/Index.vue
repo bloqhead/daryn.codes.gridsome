@@ -6,8 +6,8 @@
       <div class="intro__image">
         <g-image
           itemprop="photo"
-          src="~/assets/images/me.jpg"
-          alt="A picture of Daryn smiling while wearing a comfy hoodie"
+          src="~/assets/images/me-new.jpg"
+          alt="A picture of Daryn with long hair"
         />
       </div>
       <p>

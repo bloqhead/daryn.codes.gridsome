@@ -1,7 +1,7 @@
 ---
 title: Kuma GUI
 url: https://github.com/kumahq/kuma-gui
-image: ../../static/work/kuma-gui.png
+image: ../../static/images/work/kuma-gui.png
 slug: kuma-gui
 ---
 

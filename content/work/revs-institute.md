@@ -1,7 +1,7 @@
 ---
 title: Revs Institute
 url: https://revsinstitute.org/
-image: ../../static/work/revs-institute.png
+image: ../../static/images/work/revs-institute.png
 slug: revs-institute
 ---
 
