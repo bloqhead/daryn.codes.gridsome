@@ -8,7 +8,7 @@
   font-size: 0.8em;
   // text-align: center;
   color: $shade;
-  padding: $global-component-padding * 2;
+  // padding: $global-component-padding * 2;
   margin: 0;
 
   a {
@@ -25,7 +25,15 @@
   }
 }
 
+.page-footer__title {
+  font-size: 1.25em;
+  letter-spacing: 0;
+  margin: 1em 0;
+  color: #fff;
+}
+
 .page-footer__content {
+  padding: $global-component-padding * 2;
 }
 
 .page-footer__copyright {
@@ -34,7 +42,10 @@
 
 .page-footer__social {
   @include list-reset;
-  text-transform: uppercase;
+
+  ul {
+    text-transform: uppercase;
+  }
 
   li,
   a {
@@ -70,6 +81,11 @@
   a {
     display: block;
   }
+}
+
+.page-footer__secondary {
+  padding: $global-component-padding * 2;
+  background-color: #000;
 }
 
 @media #{$bp-medium} {
