@@ -1,6 +1,6 @@
 ---
 title: From VSCode to Nova
-date: 2019-11-11
+date: 2020-11-11
 slug: from-vscode-to-nova
 ---
 
