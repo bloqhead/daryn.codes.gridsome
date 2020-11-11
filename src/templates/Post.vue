@@ -39,6 +39,7 @@ query Post ($path: String!) {
       slug
       id
       title
+      excerpt
       content
       date
       timeToRead
@@ -85,12 +86,12 @@ export default {
         {
           key: "og:description",
           property: "og:description",
-          content: this.metaDesc
+          content: this.$page.post.excerpt || this.metaDesc
         },
         {
           key: "twitter:description",
           name: "twitter:description",
-          content: this.metaDesc
+          content: this.$page.post.excerpt || this.metaDesc
         }
       ]
     };
