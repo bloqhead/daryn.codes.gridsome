@@ -8,7 +8,7 @@ slug: from-vscode-to-nova
 
 With the surge of 100% free editors flooding the market that are built on Electron, it’s hard to justify jumping ship from tools like VS Code, Atom, etc. As Panic themselves say on the [Nova website](https://nova.app/), “[…] Mac apps are a bit of a lost art.” As a developer that came from editors like Coda, Espresso, TextMate, and Sublime, this resonates with me heavily. I always loved the snappiness and responsiveness of native macOS editors.
 
-About a week ago, I bit the bullet and bought a Nova license. It’s a one time fee of $99, with a yearly $49 (optional) fee to receive updates, with the first year of updates being included with the \$99 purchase. I’ve missed the years I spent with the aforementioned native editors and seeing Panic continuing their craft fills me with joy and nostalgia.
+About a week ago, I bit the bullet and bought a Nova license. It’s a one time fee of $99, with a yearly $49 (optional) fee to receive updates, with the first year of updates being included with the $99 purchase. I’ve missed the years I spent with the aforementioned native editors and seeing Panic continuing their craft fills me with joy and nostalgia.
 
 ## The Switch
 
