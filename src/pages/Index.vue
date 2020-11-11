@@ -2,26 +2,27 @@
   <div class="page-content">
     <h1 class="brush title">Versatile</h1>
 
-    <div itemscope itemtype="https://schema.org/Person" class="intro intro--has-image">
+    <div
+      itemscope
+      itemtype="https://schema.org/Person"
+      class="intro intro--has-image"
+    >
       <div class="intro__image">
         <g-image
           itemprop="photo"
-          src="~/assets/images/me.jpg"
-          alt="A picture of Daryn smiling while wearing a comfy hoodie"
+          src="~/assets/images/me-new.jpg"
+          alt="A picture of Daryn with long hair"
         />
       </div>
       <p>
         My name is
         <span itemprop="givenName">Daryn</span>
         and I build
-        <g-link to="/work/">websites</g-link>&nbsp;in sunny St. Petersburg Florida. I like to experiment on
-        <a
-          href="https://codepen.io/bloqhead"
-        >Codepen</a>
+        <g-link to="/work/">websites</g-link>&nbsp;in sunny St. Petersburg
+        Florida. I like to experiment on
+        <a href="https://codepen.io/bloqhead">Codepen</a>
         and have been featured on the front page multiple times, as well as in
-        <a
-          href="https://codepen.io/spark/"
-        >Codepen Spark</a>
+        <a href="https://codepen.io/spark/">Codepen Spark</a>
         .
       </p>
     </div>
@@ -44,9 +45,7 @@
       computer-savvy father. Before I was born, he was a contractor for NASA and
       worked on computer systems that were used in space capsules. With his
       guidance, I was eventually navigating
-      <abbr
-        title="Microsoft Disk Operating System"
-      >MS-DOS</abbr>
+      <abbr title="Microsoft Disk Operating System">MS-DOS</abbr>
       like a pro.
     </p>
 
@@ -102,29 +101,29 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$static.metadata.siteDescription
+          content: this.$static.metadata.siteDescription,
         },
         {
           key: "og:url",
           property: "og:url",
-          content: this.$static.metadata.siteUrl + this.$route.path
+          content: this.$static.metadata.siteUrl + this.$route.path,
         },
         {
           key: "og:title",
           property: "og:title",
-          content: this.$static.metadata.siteName
+          content: this.$static.metadata.siteName,
         },
         {
           key: "twitter:title",
           name: "twitter:title",
-          content: this.$static.metadata.siteName
+          content: this.$static.metadata.siteName,
         },
-        {}
-      ]
+        {},
+      ],
     };
   },
   components: {
-    BrandLogos
-  }
+    BrandLogos,
+  },
 };
 </script>

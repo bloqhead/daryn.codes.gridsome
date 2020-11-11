@@ -1,7 +1,7 @@
 ---
 title: The Brewery Bay
 url: http://thebrewerybay.com/
-image: ../../static/work/the-brewery-bay.png
+image: ../../static/images/work/the-brewery-bay.png
 slug: brewery-bay
 ---
 

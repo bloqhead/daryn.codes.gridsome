@@ -51,6 +51,7 @@
           <li>iPhone Xs Max</li>
           <li>Audio-Technica ATR2100X-USB USB/XLR Microphone</li>
           <li>Knox Gear Boom Arm and Shock Mount</li>
+          <li>Audio-Technica ATH-M30x headphones</li>
         </ul>
       </div>
       <div>

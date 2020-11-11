@@ -114,8 +114,8 @@ body {
   .page-footer__content {
     display: grid;
     grid-template-columns: repeat(3, 2fr 1fr);
-    grid-template-areas: "social .... .... .... copyright";
-    align-items: center;
+    grid-template-areas: "social music music music copyright";
+    // align-items: center;
   }
 
   .page-footer__social {
@@ -124,5 +124,11 @@ body {
 
   .page-footer__copyright {
     grid-area: copyright;
+    align-self: center;
+  }
+
+  .page-footer__music {
+    grid-area: music;
+    padding: 0 3em;
   }
 }

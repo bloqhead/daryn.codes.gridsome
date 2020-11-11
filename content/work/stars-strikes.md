@@ -1,7 +1,7 @@
 ---
 title: Stars & Strikes
 url: https://starsandstrikes.com/
-image: ../../static/work/stars-and-strikes.png
+image: ../../static/images/work/stars-and-strikes.png
 slug: stars-strikes
 ---
 

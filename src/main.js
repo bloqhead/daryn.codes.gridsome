@@ -10,7 +10,8 @@ import {
   faArrowRight,
   faCode,
   faClock,
-  faTerminal
+  faTerminal,
+  faCompactDisc,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -24,7 +25,7 @@ import {
   faJs,
   faVuejs,
   faWordpressSimple,
-  faNode
+  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -47,66 +48,81 @@ library.add(
   faArrowRight,
   faCode,
   faClock,
-  faTerminal
+  faTerminal,
+  faCompactDisc
 );
 
 // Styles
 import "~/assets/scss/vendor/prism-synthwave84.css";
 import "~/assets/scss/styles.scss";
 
-export default function(Vue, { router, head, isClient }) {
+// Plugins
+import VueWaypoint from "vue-waypoint";
+
+export default function (Vue, { router, head, isClient }) {
   Vue.component("fa", FontAwesomeIcon);
   Vue.component("Layout", DefaultLayout);
+  Vue.use(VueWaypoint);
 
   head.link.push({
     rel: "stylesheet",
     href:
-      "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700&font-display=swap"
+      "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700&font-display=swap",
   });
 
   // Global Meta
   head.meta.push(
     {
       name: "keywords",
-      content: "Web, Web Design, Web Development, Fullstack, JAMStack, JavaScript, HTML5, CSS, Sass, Vue, Vue.js, PHP, WordPress, Engineer"
-    }, {
+      content:
+        "Web, Web Design, Web Development, Fullstack, JAMStack, JavaScript, HTML5, CSS, Sass, Vue, Vue.js, PHP, WordPress, Engineer",
+    },
+    {
       key: "fb:app_id",
       property: "fb:app_id",
-      content: "121082755871108"
-    }, {
+      content: "121082755871108",
+    },
+    {
       key: "og:description",
       property: "og:description",
       content:
-        "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
-    }, {
+        "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.",
+    },
+    {
       key: "og:type",
       property: "og:type",
-      content: "website"
-    }, {
+      content: "website",
+    },
+    {
       key: "og:image",
       property: "og:image",
-      content: "https://daryn.codes/og@2x.png"
-    }, {
+      content: "https://daryn.codes/og@2x.png",
+    },
+    {
       key: "twitter:creator",
       name: "twitter:creator",
-      content: "@bloqhead"
-    }, {
+      content: "@bloqhead",
+    },
+    {
       key: "twitter:site",
       name: "twitter:site",
-      content: "@bloqhead"
-    }, {
+      content: "@bloqhead",
+    },
+    {
       key: "twitter:card",
       name: "twitter:card",
-      content: "summary_large_image"
-    }, {
+      content: "summary_large_image",
+    },
+    {
       key: "twitter:image",
       name: "twitter:image",
-      content: "https://daryn.codes/og@2x.png"
-    }, {
+      content: "https://daryn.codes/og@2x.png",
+    },
+    {
       key: "twitter:description",
       name: "twitter:description",
       content:
-        "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+        "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.",
     }
   );
 }
