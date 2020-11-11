@@ -57,7 +57,7 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.metaDesc
+          content: this.$page.post.excerpt || this.metaDesc
         },
         {
           name: "author",
