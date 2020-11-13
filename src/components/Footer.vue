@@ -2,7 +2,7 @@
   <footer class="page-footer">
     <div class="page-footer__content">
       <div class="page-footer__social">
-        <h5 class="page-footer__title">Elsewhere</h5>
+        <h5 class="page-footer__title">Connect</h5>
         <ul>
           <li>
             <a href="https://codepen.io/bloqhead">
@@ -32,7 +32,19 @@
       </div>
 
       <div class="page-footer__music">
-        <h5 class="page-footer__title">This Week's Music</h5>
+        <h5 class="page-footer__title">
+          Music Loves
+          <small>
+            <a
+              class="music__profile-link"
+              href="https://music.apple.com/profile/pizzatacos"
+              target="_blank"
+              title="@pizzatacos on Apple Music"
+            >
+              @pizzatacos
+            </a>
+          </small>
+        </h5>
         <music />
       </div>
 
