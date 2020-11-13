@@ -7,8 +7,15 @@
       <ul class="music__items">
         <li v-for="(item, idx) of items" :key="idx">
           <a :href="item.url">
-            <div class="music__icon">
+            <!-- <div class="music__icon">
               <fa :icon="['fas', 'compact-disc']" class="fa-2x" />
+            </div> -->
+            <div class="music__cover">
+              <g-image
+                itemprop="photo"
+                :src="item.image[1]['#text']"
+                :alt="item.artist.name"
+              />
             </div>
             <div>
               <h5 class="music__album-title">
@@ -16,7 +23,7 @@
               </h5>
               <span class="music__separator">by</span>
               <span class="music__artist">
-                {{ item.artist["#text"] }}
+                {{ item.artist.name }}
               </span>
             </div>
           </a>
@@ -42,12 +49,12 @@ export default {
   },
   methods: {
     fetchLatestScrobbles() {
-      const api = `https://ws.audioscrobbler.com/2.0/?user=${process.env.GRIDSOME_SPOTIFY_USERNAME}&api_key=${process.env.GRIDSOME_SPOTIFY_API_KEY}&format=json&method=user.getweeklyalbumchart&limit=3`;
+      const api = `https://ws.audioscrobbler.com/2.0/?method=user.getlovedtracks&user=${process.env.GRIDSOME_LASTFM_USERNAME}&api_key=${process.env.GRIDSOME_LASTFM_API_KEY}&format=json&limit=3`;
 
       axios
         .get(api)
         .then((res) => {
-          this.items = res.data.weeklyalbumchart.album;
+          this.items = res.data.lovedtracks.track;
         })
         .catch((err) => {
           this.error = true;

@@ -4,6 +4,7 @@
 
 .music__items {
   a {
+    position: relative;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -12,16 +13,54 @@
     transform-origin: center;
     border-radius: 10px;
 
-    &:hover {
-      transform: scale(1.05);
+    &:after {
+      $t: cubic-bezier(0.8, 0.33, 0.42, 0.85);
+
+      position: absolute;
+      z-index: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      border-radius: 10px;
+      transform-origin: center;
+      transform: scale(0);
       background-color: rgba(#000, 0.5);
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out, transform 0.2s $t;
+    }
+
+    &:hover {
+      $i: 1.05;
+
+      transform: scale($i);
+
+      &:after {
+        transform: scale(1.03, $i);
+        opacity: 1;
+      }
     }
 
     > div {
+      position: relative;
+      z-index: 1;
+
       &:first-of-type {
-        padding-right: 1em;
+        margin-right: 1.5em;
       }
     }
+  }
+}
+
+.music__cover {
+  border-radius: 10px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
