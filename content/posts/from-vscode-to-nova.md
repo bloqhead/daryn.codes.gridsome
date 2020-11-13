@@ -42,9 +42,9 @@ There are already a ton of themes available for Nova. You’re bound to find one
 
 ![A screenshot of Nova's theme preferences](/journal/nova-themes.png)
 
-You can access this view by going to Preferences (CMD+,) > Themes. The “More Themes” button at the bottom of the Themes preferences view will bring you to the above Extensions window (if you’re a VSCode user, you’ll already be familiar with this extensions approach). [Skip to the Command Palette](#the-command-palette).
+You can access this view by going to Preferences (CMD+,) > Themes. The “More Themes” button at the bottom of the Themes preferences view will bring you to the above Extensions window (if you’re a VSCode user, you’ll already be familiar with this extensions approach).
 
-In addition to finding the right theme for your editor, you can also apply the desired theme to the Command Palette as well (more on that further down). To make the Command Palette match your theme, tick the box next to "Command Palettes" titled "Use a contrasting appearance." This will make it dark or light based on your theme's contrast.
+In addition to finding the right theme for your editor, you can also apply the desired theme to the Command Palette as well (more on that further down). To make the Command Palette match your theme, untick the box next to "Command Palettes" titled "Use a contrasting appearance." This will make it dark or light based on your theme's contrast. [Learn more about the Command Palette](#the-command-palette).
 
 ### Your Workspace
 
