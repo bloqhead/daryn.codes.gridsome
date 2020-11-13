@@ -1,15 +1,13 @@
 ---
-title: From VSCode to Nova
+title: From VSCode to Panic Nova
 date: 2020-11-11
 slug: from-vscode-to-nova
 excerpt: Your go-to guide for switching from VSCode to Panic's new Nova editor
 ---
 
-# From VSCode to Nova
-
 With the surge of 100% free editors flooding the market that are built on Electron, it’s hard to justify jumping ship from tools like VS Code, Atom, etc. As Panic themselves say on the [Nova website](https://nova.app/), “[…] Mac apps are a bit of a lost art.” As a developer that came from editors like Coda, Espresso, TextMate, and Sublime, this resonates with me heavily. I always loved the snappiness and responsiveness of native macOS editors.
 
-About a week ago, I bit the bullet and bought a Nova license. It’s a one time fee of $99, with a yearly $49 (optional) fee to receive updates, with the first year of updates being included with the $99 purchase. I’ve missed the years I spent with the aforementioned native editors and seeing Panic continuing their craft fills me with joy and nostalgia.
+About a week ago, I bit the bullet and bought a Nova license. It’s a one time fee of $99, with a yearly $49 (optional) fee to receive updates, with the first year of updates being included with the \$99 purchase. I’ve missed the years I spent with the aforementioned native editors and seeing Panic continuing their craft fills me with joy and nostalgia.
 
 ## The Switch
 
@@ -33,7 +31,7 @@ Some initial items to change and enable in the Preferences pane:
 
 If you want the ability to open files and folders in Nova from the command line like you can with `code` in VSCode, here’s how to do it: in the Preferences pane, go to the tab “Tools”. The first thing you’ll see here is “Command Line Tool” — click “Install”. You can now do this:
 
-```
+```sh
 cd some-dir/
 nova .
 ```
@@ -44,7 +42,9 @@ There are already a ton of themes available for Nova. You’re bound to find one
 
 ![A screenshot of Nova's theme preferences](/journal/nova-themes.png)
 
-You can access this view by going to Preferences (CMD+,) > Themes. The “More Themes” button at the bottom of the Themes preferences view will bring you to the above Extensions window (if you’re a VSCode user, you’ll already be familiar with this extensions approach).
+You can access this view by going to Preferences (CMD+,) > Themes. The “More Themes” button at the bottom of the Themes preferences view will bring you to the above Extensions window (if you’re a VSCode user, you’ll already be familiar with this extensions approach). [Skip to the Command Palette](#nova-command-palette).
+
+In addition to finding the right theme for your editor, you can also apply the desired theme to the Command Palette as well (more on that further down). To make the Command Palette match your theme, tick the box next to "Command Palettes" titled "Use a contrasting appearance." This will make it dark or light based on your theme's contrast.
 
 ### Your Workspace
 
@@ -68,6 +68,12 @@ If you’re like me, in VSCode projects, you always have a Terminal view adhered
 4. Resize the view accordingly
 
 _Voila!_ Now you can run your project’s scripts from within Nova in the same way that you do in VSCode.
+
+### The Command Palette
+
+The Command Palette in Nova is comparable to `CMD+P` in VSCode. To access Nova's Command Palette, you can press `CMD+SHIFT+O`. This tool allows you to access files, Symbols, and Symbols in open files. It will become your best friend when Nova is in your daily arsenal.
+
+![A screenshot of the Command Palette in Nova](/journal/nova-command-palette.png)
 
 ## Get Started!
 
