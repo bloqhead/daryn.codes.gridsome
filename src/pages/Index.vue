@@ -38,6 +38,14 @@
       </p>
     </div>
 
+    <div class="doomguy">
+      <g-image
+        itemprop="photo"
+        src="~/assets/images/doomguy-walking.gif"
+        alt="An animated gif of Doomguy walking"
+      />
+    </div>
+
     <h3>It all started as a kid&hellip;</h3>
 
     <p class="attn">
@@ -48,6 +56,14 @@
       <abbr title="Microsoft Disk Operating System">MS-DOS</abbr>
       like a pro.
     </p>
+
+    <div class="doomguy">
+      <g-image
+        itemprop="photo"
+        src="~/assets/images/doomguy.gif"
+        alt="An animated gif of Doomguy's various facial expressions"
+      />
+    </div>
 
     <!-- <p>This upbringing, coupled with my artistic roots (and a couple failed art school attempts), eventually evolved into a graphic design career that gifted me with many interesting experiences and problems to solve.</p>
 
@@ -127,3 +143,33 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.doomguy {
+  --bg: #1c1c1c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 1em auto;
+  text-align: center;
+
+  &:before,
+  &:after {
+    content: "";
+    height: 5px;
+    flex: 1 0 0;
+    background-color: var(--bg);
+    border-radius: 5px;
+  }
+
+  img {
+    display: block;
+    width: 80px;
+    height: auto;
+    background-color: var(--bg);
+    border-radius: 10px;
+  }
+}
+</style>
