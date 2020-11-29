@@ -81,6 +81,7 @@
       <li>JavaScript / ES(X)</li>
       <li>HTML5</li>
       <li>PHP / Twig</li>
+      <li>Node</li>
       <li>
         <a href="https://vuejs.org/">VueJS</a>
       </li>
