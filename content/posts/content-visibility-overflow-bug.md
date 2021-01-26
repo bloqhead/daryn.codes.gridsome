@@ -5,7 +5,7 @@ slug: content-visibility-overflow-bug
 excerpt: While trying out content-visibility for a project, I discovered an a11y flaw.
 ---
 
-If you keep up with the latest CSS spec and features, you've probably already heard about `content-visibility`, which shipped recently in Chrome v85. I'll allow [Una Kravets and Vladimir](https://web.dev/content-visibility/) Levin to explain it:
+If you keep up with the latest CSS spec and features, you've probably already heard about `content-visibility`, which shipped recently in Chrome v85. I'll allow [Una Kravets and Vladimir Levin](https://web.dev/content-visibility/) to explain it:
 
 > The content-visibility property, launching in Chromium 85, might be one of the most impactful new CSS properties for improving page load performance. content-visibility enables the user agent to skip an element's rendering work, including layout and painting, until it is needed. Because rendering is skipped, if a large portion of your content is off-screen, leveraging the content-visibility property makes the initial user load much faster. It also allows for faster interactions with the on-screen content. Pretty neat.
 
