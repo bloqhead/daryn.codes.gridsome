@@ -20,7 +20,7 @@ Let's say I have `.container` with `content-visibility: auto` set on it. Inside 
 ```html
 <div class="container">
   <a href="#" class="link">
-    <img src="https://images.unsplash.com/photo-1610477772868-c7617f44fa3c?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85" alt="" />
+    <img src="[...]" alt="" />
   </a>
 </div>
 ```
