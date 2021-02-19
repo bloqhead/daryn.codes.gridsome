@@ -1,9 +1,9 @@
 module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.vue'
-  ],
+  purge: {
+    layers: ["components", "utilities"],
+    content: ["./src/**/*.html", "./src/**/*.vue"],
+  },
   theme: {},
   variants: {},
   plugins: [],
-}
+};
