@@ -13,11 +13,12 @@ module.exports = {
   siteDescription: siteDesc,
   titleTemplate: `%s | ${siteName}`,
   plugins: [
+    "gridsome-plugin-robots-txt",
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
-        id: "UA-2478113-11"
-      }
+        id: "UA-2478113-11",
+      },
     },
     {
       use: "@gridsome/plugin-sitemap",
@@ -26,26 +27,26 @@ module.exports = {
         config: {
           "/": {
             changefreq: "monthly",
-            priority: 0.5
+            priority: 0.5,
           },
           "/work/*": {
             changefreq: "monthly",
-            priority: 0.7
+            priority: 0.7,
           },
           "/journal/*": {
             changefreq: "monthly",
-            priority: 0.5
+            priority: 0.5,
           },
           "/contact": {
             changefreq: "monthly",
-            priority: 0.5
+            priority: 0.5,
           },
           "/uses": {
             changefreq: "weekly",
-            priority: 0.5
-          }
-        }
-      }
+            priority: 0.5,
+          },
+        },
+      },
     },
     {
       use: "gridsome-plugin-pwa",
@@ -63,35 +64,35 @@ module.exports = {
         backgroundColor: "#000000",
         icon: "./src/icon.png",
         msTileImage: "./src/icon.png",
-        msTileColor: "#f54768"
-      }
+        msTileColor: "#f54768",
+      },
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "content/posts/**/*.md",
         typeName: "Post",
-        route: "/journal/:slug"
-      }
+        route: "/journal/:slug",
+      },
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "content/work/**/*.md",
         typeName: "Work",
-        route: "/work/:slug"
-      }
+        route: "/work/:slug",
+      },
     },
     {
-      use: "gridsome-plugin-tailwindcss"
-    }
+      use: "gridsome-plugin-tailwindcss",
+    },
   ],
   transformers: {
     // Add markdown support to all file-system sources
     remark: {
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+      plugins: ["@gridsome/remark-prismjs"],
+    },
+  },
 };

@@ -24,6 +24,7 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-ogp": "^0.0.7",
     "gridsome-plugin-pwa": "^0.0.12",
+    "gridsome-plugin-robots-txt": "^1.0.2",
     "sass": "^1.27.0",
     "sass-loader": "^8.0.2",
     "vue-waypoint": "^3.5.2"
