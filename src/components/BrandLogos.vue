@@ -1,23 +1,19 @@
 <template>
   <div
     v-waypoint="{
-      active: true, 
-      callback: onWaypoint, 
-      options: intersectionOptions
+      active: true,
+      callback: onWaypoint,
+      options: intersectionOptions,
     }"
     ref="logos"
     class="brand-logos grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12 justify-center text-center mt--sm mb--sm"
   >
-    <div
-      v-for="(logo, index) in logos"
-      :key="index"
-      class="brand-logos__item"
-    >
+    <div v-for="(logo, index) in logos" :key="index" class="brand-logos__item">
       <fa
-        :icon="[ logo.lib ? logo.lib : 'fab', logo.slug ]"
+        :icon="[logo.lib ? logo.lib : 'fab', logo.slug]"
         :class="[
           `color--${logo.color ? logo.color : logo.slug}`,
-          logo.size ? logo.size : 'fa-7x'
+          logo.size ? logo.size : 'fa-7x',
         ]"
         :title="logo.title"
       />
@@ -32,71 +28,66 @@ export default {
       logos: [
         {
           slug: "html5",
-          title: "HTML5"
+          title: "HTML5",
         },
         {
           slug: "wordpress-simple",
           title: "WordPress",
-          color: "wordpress"
+          color: "wordpress",
         },
         {
           slug: "sass",
-          title: "Sass"
+          title: "Sass",
         },
         {
           slug: "js",
-          title: "JavaScript"
+          title: "JavaScript",
         },
         {
           slug: "php",
-          title: "PHP"
+          title: "PHP",
         },
         {
           slug: "vuejs",
           title: "Vue.js",
-          color: "vue"
+          color: "vue",
         },
         {
           slug: "node",
-          title: "Node.js"
-        }
+          title: "Node.js",
+        },
       ],
       intersectionOptions: {
         root: null,
-        rootMargin: '0px 0px 0px 0px',
-        threshold: [ 0.75, 0.75 ]
-      }
-    }
+        rootMargin: "0px 0px 0px 0px",
+        threshold: [0.75, 0.75],
+      },
+    };
   },
   methods: {
-    onWaypoint ({ going, direction }) {
-      const el = this.$refs.logos
+    onWaypoint({ going, direction }) {
+      const el = this.$refs.logos;
 
       if (going === this.$waypointMap.GOING_IN) {
-        el.classList.add('in-view')
+        el.classList.add("in-view");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .brand-logos {
-  
   .brand-logos__item {
     filter: grayscale(100%) brightness(500%);
     transform: translateY(75%);
     opacity: 0;
 
-    transition:
-      transform 0.5s cubic-bezier(0.78, 0.42, 0.11, 0.92),
-      filter 1s 10s ease-in-out,
-      opacity 0.5s ease-in-out
-    ;
+    transition: transform 0.5s cubic-bezier(0.78, 0.42, 0.11, 0.92),
+      filter 1s 10s ease-in-out, opacity 0.5s ease-in-out;
   }
 
   &.in-view {
-    
     .brand-logos__item {
       filter: grayscale(0) brightness(100%);
       transform: translateY(0);

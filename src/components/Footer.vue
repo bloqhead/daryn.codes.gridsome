@@ -1,7 +1,7 @@
 <template>
   <footer class="page-footer">
     <div class="page-footer__content">
-      <div class="page-footer__social">
+      <div class="page-footer__social mb-12 xl:mb-0">
         <h5 class="page-footer__title">Connect</h5>
         <ul>
           <li>
@@ -31,7 +31,7 @@
         </ul>
       </div>
 
-      <div class="page-footer__music">
+      <div class="page-footer__music mb-12 xl:mb-0">
         <h5 class="page-footer__title">
           Music Loves
           <small>

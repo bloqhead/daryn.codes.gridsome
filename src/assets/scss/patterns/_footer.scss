@@ -41,7 +41,8 @@
 }
 
 .page-footer__social {
-  @include list-reset;
+  list-style: none;
+  padding: 0;
 
   ul {
     text-transform: uppercase;
@@ -54,8 +55,9 @@
 
   a {
     text-decoration: none;
-    border-bottom: $soft-line;
-    padding: 0.5em 0;
+    // border-bottom: $soft-line;
+    // padding: 0.5em 0;
+    margin: 0.5em 0;
 
     &:hover {
       svg path {

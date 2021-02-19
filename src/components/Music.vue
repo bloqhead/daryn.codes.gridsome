@@ -7,16 +7,16 @@
       <ul class="music__items">
         <li v-for="(item, idx) of items" :key="idx">
           <a :href="item.url">
-            <!-- <div class="music__icon">
+            <div class="music__icon">
               <fa :icon="['fas', 'compact-disc']" class="fa-2x" />
-            </div> -->
-            <div class="music__cover">
+            </div>
+            <!-- <div class="music__cover">
               <g-image
                 itemprop="photo"
                 :src="item.image[1]['#text']"
                 :alt="item.artist.name"
               />
-            </div>
+            </div> -->
             <div>
               <h5 class="music__album-title">
                 {{ item.name }}
