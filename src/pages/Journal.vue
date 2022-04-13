@@ -54,33 +54,33 @@ export default {
         {
           name: "description",
           content:
-            "Topics that span the gamut of web development, UX, Vue.js, and other similar topics."
+            "Topics that span the gamut of web development, UX, Vue.js, and other similar topics.",
         },
         {
           name: "author",
-          content: "Daryn St. Pierre"
+          content: "Daryn St. Pierre",
         },
         {
           key: "og:url",
           property: "og:url",
-          content: this.$static.metadata.siteUrl + this.$route.path
+          content: this.$static.metadata.siteUrl + this.$route.path,
         },
         {
           key: "og:title",
           property: "og:title",
-          content: "Journal"
+          content: "Journal",
         },
         {
           key: "twitter:title",
           name: "twitter:title",
-          content: "Journal"
-        }
-      ]
+          content: "Journal",
+        },
+      ],
     };
   },
   components: {
     FormatDate,
-    PostList
-  }
+    PostList,
+  },
 };
 </script>

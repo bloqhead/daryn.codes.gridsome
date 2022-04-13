@@ -1,3 +1,5 @@
 {
+  "tommasonegri.vue.config.mode" : "Vetur",
+  "tommasonegri.vue.serverRunning" : true,
   "workspace.name" : "daryn.codes"
 }
