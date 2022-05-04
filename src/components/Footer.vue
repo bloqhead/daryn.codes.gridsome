@@ -5,27 +5,21 @@
         <h5 class="page-footer__title">Connect</h5>
         <ul>
           <li>
-            <a href="https://codepen.io/bloqhead">
+            <a rel="me" href="https://codepen.io/bloqhead">
               <fa :icon="['fab', 'codepen']" />
               <span>Codepen</span>
             </a>
           </li>
           <li>
-            <a href="https://github.com/bloqhead">
+            <a rel="me" href="https://github.com/bloqhead">
               <fa :icon="['fab', 'github']" />
               <span>Github</span>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/bloqhead">
-              <fa :icon="['fab', 'twitter']" />
-              <span>Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/karmapizza">
-              <fa :icon="['fab', 'instagram']" />
-              <span>Instagram</span>
+            <a rel="me" href="https://mstdn.social/@kryosleep">
+              <fa :icon="['fab', 'mastodon']" />
+              <span>Mastodon</span>
             </a>
           </li>
         </ul>

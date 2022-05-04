@@ -26,6 +26,7 @@ import {
   faVuejs,
   faWordpressSimple,
   faNode,
+  faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -44,12 +45,13 @@ library.add(
   faVuejs,
   faWordpressSimple,
   faNode,
+  faMastodon,
   faEnvelope,
   faArrowRight,
   faCode,
   faClock,
   faTerminal,
-  faCompactDisc
+  faCompactDisc,
 );
 
 // Styles
